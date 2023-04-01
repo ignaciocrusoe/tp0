@@ -18,6 +18,9 @@ int main(void)
 
 	// Usando el logger creado previamente
 	// Escribi: "Hola! Soy un log"
+	logger = log_create("tp0.log", "PROCESS_TP0", 1, LOG_LEVEL_INFO);
+	log_info(logger, "Soy un Log");
+	log_destroy(logger);
 
 
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
