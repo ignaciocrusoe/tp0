@@ -25,7 +25,7 @@ int main(void)
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
 
 	config = iniciar_config();
-	config_get_int_value("", valor);
+	valor config_get_string_value(cliente.config, "CLAVE");
 	log_info(logger, valor);
 
 	// Usando el config creado previamente, leemos los valores del config y los 
