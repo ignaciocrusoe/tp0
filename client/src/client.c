@@ -20,12 +20,13 @@ int main(void)
 	// Escribi: "Hola! Soy un log"
 	logger = log_create("tp0.log", "PROCESS_TP0", 1, LOG_LEVEL_INFO);
 	log_info(logger, "Soy un Log");
-	log_destroy(logger);
 
 
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
 
 	config = iniciar_config();
+	config_get_int_value("", valor);
+	log_info(logger, valor);
 
 	// Usando el config creado previamente, leemos los valores del config y los 
 	// dejamos en las variables 'ip', 'puerto' y 'valor'
@@ -48,7 +49,7 @@ int main(void)
 
 	// Armamos y enviamos el paquete
 	paquete(conexion);
-
+	log_destroy(logger);
 	terminar_programa(conexion, logger, config);
 
 	/*---------------------------------------------------PARTE 5-------------------------------------------------------------*/
