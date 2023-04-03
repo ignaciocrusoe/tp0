@@ -80,13 +80,25 @@ void leer_consola(t_log* logger)
 	char* leido;
 
 	// La primera te la dejo de yapa
-	leido = readline("> ");
+	//leido = readline("> ");
 
 	// El resto, las vamos leyendo y logueando hasta recibir un string vacío
 
+	while(1){
+		leido = readline("> ");
+		if(leido){
+			add_history(leido);
+			log_info(logger, leido);
+		}
+		if(!strcmp(leido, "")){
+			free(leido);
+			break;
+		}
+	}
 
 	// ¡No te olvides de liberar las lineas antes de regresar!
-
+	//printf("%s\n", leido);
+	//free(leido);
 }
 
 void paquete(int conexion)
