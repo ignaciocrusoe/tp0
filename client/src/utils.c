@@ -71,8 +71,8 @@ void crear_buffer(t_paquete* paquete)
 
 t_paquete* crear_super_paquete(void)
 {
-	//me falta un malloc!
-	t_paquete* paquete;
+
+	t_paquete* paquete = malloc(sizeof(paquete));
 
 	//descomentar despues de arreglar
 	//paquete->codigo_operacion = PAQUETE;
