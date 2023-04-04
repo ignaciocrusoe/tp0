@@ -26,6 +26,8 @@ int main(void)
 	config = iniciar_config();
 	valor = config_get_string_value(config, "CLAVE");
 	log_info(logger, valor);
+	ip = config_get_string_value(config, "IP");
+	puerto = config_get_string_value(config, "PUERTO");
 
 	// Usando el config creado previamente, leemos los valores del config y los 
 	// dejamos en las variables 'ip', 'puerto' y 'valor'
@@ -45,7 +47,7 @@ int main(void)
 	conexion = crear_conexion(ip, puerto);
 
 	// Enviamos al servidor el valor de CLAVE como mensaje
-
+	enviar_mensaje(valor, conexion);
 	// Armamos y enviamos el paquete
 	paquete(conexion);
 	terminar_programa(conexion, logger, config);
@@ -124,4 +126,5 @@ void terminar_programa(int conexion, t_log* logger, t_config* config)
 	if(config != NULL){
 			config_destroy(config);
 		}
+	liberar_conexion(conexion);
 }
