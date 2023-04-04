@@ -115,6 +115,9 @@ void paquete(int conexion)
 			if(leido){
 				add_history(leido);
 				agregar_a_paquete(paquete, leido, (strlen(leido) + 1));
+				enviar_paquete(paquete, conexion);
+				eliminar_paquete(paquete);
+				free(paquete);
 			}
 			if(!strcmp(leido, "")){
 				free(leido);
@@ -123,8 +126,7 @@ void paquete(int conexion)
 		}
 
 	// ¡No te olvides de liberar las líneas y el paquete antes de regresar!
-	enviar_paquete(paquete, conexion);
-	eliminar_paquete(paquete);
+
 }
 
 void terminar_programa(int conexion, t_log* logger, t_config* config)
