@@ -42,7 +42,7 @@ int main(void)
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
 	// ADVERTENCIA: Antes de continuar, tenemos que asegurarnos que el servidor esté corriendo para poder conectarnos a él
-
+	printf("IP: %s - PUERTO: %s\n", ip, puerto);
 	// Creamos una conexión hacia el servidor
 	conexion = crear_conexion(ip, puerto);
 

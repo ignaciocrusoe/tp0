@@ -29,7 +29,7 @@ int iniciar_servidor(void)
 
 	freeaddrinfo(servinfo);
 	log_trace(logger, "Listo para escuchar a mi cliente");
-	esperar_cliente(socket_servidor);
+	//esperar_cliente(socket_servidor);
 	return socket_servidor;
 }
 
