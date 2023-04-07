@@ -17,6 +17,9 @@ int iniciar_servidor(void)
 	hints.ai_flags = AI_PASSIVE;
 
 	getaddrinfo(IP, PUERTO, &hints, &servinfo);
+	printf("IP: %s - PUERTO: %s\n", IP, PUERTO
+
+	);
 
 	// Creamos el socket de escucha del servidor
 	socket_servidor = socket(servinfo->ai_family, servinfo->ai_socktype, servinfo->ai_protocol);
