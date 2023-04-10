@@ -13,3 +13,36 @@
 
 [INFO] 00:14:05:376 Servidor/(2441:2441): log2
 [ERROR] 00:14:06:171 Servidor/(2441:2441): el cliente se desconecto. Terminando servidor
+[INFO] 00:19:04:943 Servidor/(2923:2923): Servidor listo para recibir al cliente
+[INFO] 00:19:10:275 Servidor/(2923:2923): Se conecto un cliente!
+[INFO] 00:19:10:275 Servidor/(2923:2923): Me llego el mensaje valor
+[INFO] 00:19:20:677 Servidor/(2923:2923): Me llegaron los siguientes valores:
+
+[INFO] 00:19:20:678 Servidor/(2923:2923): mensaje1
+[ERROR] 00:19:21:336 Servidor/(2923:2923): el cliente se desconecto. Terminando servidor
+[INFO] 00:21:11:371 Servidor/(3002:3002): Servidor listo para recibir al cliente
+[INFO] 00:21:13:937 Servidor/(3002:3002): Se conecto un cliente!
+[INFO] 00:21:13:939 Servidor/(3002:3002): Me llego el mensaje valor
+[INFO] 00:21:22:792 Servidor/(3002:3002): Me llegaron los siguientes valores:
+
+[INFO] 00:21:22:793 Servidor/(3002:3002): mensaje1
+[ERROR] 00:21:32:782 Servidor/(3002:3002): el cliente se desconecto. Terminando servidor
+[INFO] 00:25:15:605 Servidor/(3168:3168): Servidor listo para recibir al cliente
+[INFO] 00:25:18:713 Servidor/(3168:3168): Se conecto un cliente!
+[INFO] 00:25:18:714 Servidor/(3168:3168): Me llego el mensaje valor
+[INFO] 00:25:27:035 Servidor/(3168:3168): Me llegaron los siguientes valores:
+
+[INFO] 00:25:27:035 Servidor/(3168:3168): mensaje1
+[ERROR] 00:25:27:355 Servidor/(3168:3168): el cliente se desconecto. Terminando servidor
+[INFO] 00:26:06:107 Servidor/(3213:3213): Servidor listo para recibir al cliente
+[INFO] 00:26:11:898 Servidor/(3213:3213): Se conecto un cliente!
+[INFO] 00:26:11:903 Servidor/(3213:3213): Me llego el mensaje valor
+[INFO] 00:26:18:824 Servidor/(3213:3213): Me llegaron los siguientes valores:
+
+[INFO] 00:26:18:825 Servidor/(3213:3213): mensaje1
+[INFO] 00:26:24:303 Servidor/(3213:3213): Me llegaron los siguientes valores:
+
+[INFO] 00:26:24:304 Servidor/(3213:3213): mensaje2
+[INFO] 00:26:41:131 Servidor/(3213:3213): Me llegaron los siguientes valores:
+
+[INFO] 00:26:41:132 Servidor/(3213:3213): mensaje3

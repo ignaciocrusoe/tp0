@@ -37,7 +37,8 @@ int main(void)
 
 	/* ---------------- LEER DE CONSOLA ---------------- */
 
-	leer_consola(logger);
+
+	//leer_consola(logger);
 
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
@@ -107,17 +108,19 @@ void paquete(int conexion)
 {
 	// Ahora toca lo divertido!
 	char* leido;
-	t_paquete* paquete = crear_paquete();
+	t_paquete* paquete;
+	//= crear_paquete();
 
 	// Leemos y esta vez agregamos las lineas al paquete
 	while(1){
 			leido = readline("> ");
+			paquete = crear_paquete();
 			if(leido){
 				add_history(leido);
 				agregar_a_paquete(paquete, leido, (strlen(leido) + 1));
 				enviar_paquete(paquete, conexion);
 				eliminar_paquete(paquete);
-				free(paquete);
+				//free(paquete);
 			}
 			if(!strcmp(leido, "")){
 				free(leido);
