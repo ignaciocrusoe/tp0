@@ -5,3 +5,11 @@
 [INFO] 23:41:02:791 Servidor/(4321:4321): Servidor listo para recibir al cliente
 [INFO] 01:49:03:186 Servidor/(4758:4758): Servidor listo para recibir al cliente
 [INFO] 01:49:37:084 Servidor/(4783:4783): Servidor listo para recibir al cliente
+[INFO] 23:39:12:576 Servidor/(2067:2067): Servidor listo para recibir al cliente
+[INFO] 00:13:28:236 Servidor/(2441:2441): Servidor listo para recibir al cliente
+[INFO] 00:13:40:727 Servidor/(2441:2441): Se conecto un cliente!
+[INFO] 00:13:40:728 Servidor/(2441:2441): Me llego el mensaje valor
+[INFO] 00:14:05:376 Servidor/(2441:2441): Me llegaron los siguientes valores:
+
+[INFO] 00:14:05:376 Servidor/(2441:2441): log2
+[ERROR] 00:14:06:171 Servidor/(2441:2441): el cliente se desconecto. Terminando servidor
