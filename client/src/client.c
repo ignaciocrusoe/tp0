@@ -43,7 +43,7 @@ int main(void)
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
 
 	// ADVERTENCIA: Antes de continuar, tenemos que asegurarnos que el servidor esté corriendo para poder conectarnos a él
-	printf("IP: %s - PUERTO: %s\n", ip, puerto);
+	//printf("IP: %s - PUERTO: %s\n", ip, puerto);
 	// Creamos una conexión hacia el servidor
 	conexion = crear_conexion(ip, puerto);
 
@@ -109,7 +109,6 @@ void paquete(int conexion)
 	// Ahora toca lo divertido!
 	char* leido;
 	t_paquete* paquete;
-	//= crear_paquete();
 
 	// Leemos y esta vez agregamos las lineas al paquete
 	while(1){
@@ -120,7 +119,6 @@ void paquete(int conexion)
 				agregar_a_paquete(paquete, leido, (strlen(leido) + 1));
 				enviar_paquete(paquete, conexion);
 				eliminar_paquete(paquete);
-				//free(paquete);
 			}
 			if(!strcmp(leido, "")){
 				free(leido);
